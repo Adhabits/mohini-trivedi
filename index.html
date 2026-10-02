@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Mohini Trivedi – Build Your Online Income</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Join 1000+ Students, Housewives and Job Professionals who have Successfully built their income online with Mohini Trivedi. Start today!">
+    <meta property="og:image" content="https://i.ibb.co/pj2TWtD5/Whats-App-Image-2026-10-02-at-2-02-20-PM.jpg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Meta Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}
+        (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init','2011685649707724'); fbq('track','PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2011685649707724&ev=PageView&noscript=1"/></noscript>
+
+    <style>
+        :root {
+            --lightest: #f3e8ff;
+            --light:    #d8b4fe;
+            --primary:  #9333ea;
+            --darkest:  #4c1d95;
+            --white:    #FFFFFF;
+            --shadow: 0 6px 20px rgba(147,51,234,.15);
+            --shadow-hover: 0 10px 30px rgba(147,51,234,.25);
+            --glow: 0 0 25px rgba(216,180,254,.5);
+            --glow-intense: 0 0 40px rgba(216,180,254,.7);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--lightest);
+            color: var(--darkest);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        @keyframes pulseGlow {
+            0%,100%{box-shadow:0 0 20px rgba(216,180,254,.4);}
+            50%{box-shadow:0 0 40px rgba(216,180,254,.8);}
+        }
+        .glow-pulse { animation: pulseGlow 2.5s infinite; }
+
+        @keyframes shimmer {
+            0%{background-position:-200% 0;}100%{background-position:200% 0;}
+        }
+        .shine-effect{position:relative;overflow:hidden;}
+        .shine-effect::before{
+            content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;
+            background:linear-gradient(45deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);
+            background-size:200% 100%;animation:shimmer 3s infinite linear;transform:rotate(30deg);opacity:0;transition:opacity .3s;
+        }
+        .shine-effect:hover::before{opacity:1;}
+
+        .stats-white{
+            background:var(--white)!important;
+            color:var(--darkest)!important;
+            border:1px solid var(--light);
+        }
+
+        .glow-border{
+            border:2px solid transparent;
+            background:linear-gradient(var(--white),var(--white)) padding-box,
+                       linear-gradient(135deg,var(--primary),var(--light)) border-box;
+            transition:all .4s;
+        }
+        .glow-border:hover{box-shadow:0 0 25px rgba(147,51,234,.4);transform:translateY(-3px);}
+
+        .wa-btn{
+            background:linear-gradient(135deg,var(--primary),var(--light));
+            color:var(--white);
+            padding:.85rem 1.8rem;border-radius:50px;font-weight:800;border:none;
+            display:inline-flex;align-items:center;gap:.5rem;
+            box-shadow:0 8px 20px rgba(147,51,234,.3);
+            cursor:pointer;transition:all .3s;text-decoration:none;font-size:1rem;white-space:nowrap;
+            position:relative;overflow:hidden;
+        }
+        .wa-btn:hover{
+            transform:translateY(-3px) scale(1.03);
+            box-shadow:var(--glow-intense),0 15px 30px rgba(147,51,234,.4);
+            color:var(--white);
+        }
+        .wa-btn:active{transform:translateY(0) scale(.98);}
+
+        section{padding:50px 0;position:relative;}
+        .hero-section{
+            background: linear-gradient(135deg, var(--lightest), var(--light));
+            padding:70px 0 50px;overflow:hidden;
+        }
+        .badge-custom{
+            background:linear-gradient(135deg,var(--light),var(--primary));
+            color:var(--white);padding:.6rem 1.5rem;border-radius:50px;font-weight:700;font-size:.875rem;
+            display:inline-block;margin-bottom:1rem;box-shadow:var(--shadow);
+        }
+        .gradient-text{
+            background:linear-gradient(135deg,var(--primary),var(--darkest));
+            -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+            font-weight:800;font-family:'Playfair Display',serif;
+        }
+        .hero-text-compact{max-width:600px;margin:0 auto 1.5rem;font-size:1.125rem;line-height:1.4;color:var(--darkest);}
+        .stat-card{
+            background: var(--white); padding:1.25rem;border-radius:12px;box-shadow:var(--shadow);
+            text-align:center;transition:all .3s;height:100%;
+        }
+        .stat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);}
+        .counter{font-size:2rem;font-weight:800;color:var(--primary);}
+
+        .step-card{background: var(--white); border-radius:15px;padding:1.5rem;box-shadow:var(--shadow);transition:all .4s;height:100%;}
+        .step-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);}
+        .step-number{width:50px;height:50px;background:linear-gradient(135deg,var(--primary),var(--light));color:var(--white);border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.3rem;flex-shrink:0;}
+
+        .accordion-item{border:none;border-radius:10px !important;margin-bottom:.75rem;box-shadow:var(--shadow);}
+        .accordion-button{background: var(--white); color:var(--darkest);font-weight:600;padding:1rem;}
+        .accordion-button:not(.collapsed){background:linear-gradient(135deg,var(--lightest),var(--white));color:var(--primary);}
+        .accordion-button::after{
+            background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%239333ea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        }
+        .accordion-body{color:var(--darkest);}
+
+        .form-backdrop,.privacy-modal{
+            position:fixed;inset:0;background:rgba(12,74,110,.8);
+            backdrop-filter:blur(8px);z-index:9999;opacity:0;visibility:hidden;transition:all .4s;
+        }
+        .form-backdrop.show,.privacy-modal.show{opacity:1;visibility:visible;}
+
+        #formContainer,#privacyContent{
+            position:fixed;top:50%;left:50%;
+            transform:translate(-50%,-50%) scale(.9);
+            z-index:10000;max-width:500px;width:90%;max-height:85vh;
+            opacity:0;visibility:hidden;transition:all .4s;
+            background:var(--white);border:1px solid var(--primary);
+            border-radius:15px;box-shadow:var(--glow-intense);
+            overflow:hidden;
+        }
+        #formContainer.show,#privacyContent.show{
+            opacity:1;visibility:visible;
+            transform:translate(-50%,-50%) scale(1);
+        }
+        .form-card{box-shadow:0 0 40px rgba(147,51,234,.3);border:1px solid var(--primary);}
+        .form-control,.form-select{
+            background: var(--lightest);
+            border:2px solid var(--light);
+            color:var(--darkest);border-radius:8px;
+            padding:.6rem .9rem;transition:all .3s;width:100%;
+        }
+        .form-control:focus,.form-select:focus{
+            border-color:var(--primary);
+            box-shadow:0 0 0 4px rgba(147,51,234,.15);
+            outline:none;
+        }
+
+        #privacyContent{display:flex;flex-direction:column;}
+        .pp-scroll{overflow-y:auto;padding:1.5rem;flex:1;}
+
+        .hero-image-wrap {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(147,51,234,0.15);
+            border: 3px solid var(--primary);
+        }
+        .hero-image-wrap img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .feedback-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all .3s;
+            height: 100%;
+        }
+        .feedback-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        @keyframes scrollLeft { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .feedback-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+        .feedback-card .feedback-card .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px 15px 0 0;
+        }
+
+                .video-wrapper .video-wrapper .video-wrapper:hover .video-wrapper .video-iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+        }
+                /* ===== FEEDBACK SECTION - CLEAN CSS ===== */
+        .feedback-track {
+            display: flex;
+            gap: 15px;
+            width: max-content;
+            animation: scrollLeft 40s linear infinite;
+        }
+        .feedback-track:hover {
+            animation-play-state: paused;
+        }
+
+        .feedback-item {
+            flex-shrink: 0;
+            width: 200px;
+            height: 360px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: #000;
+        }
+        .feedback-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .video-feedback-item {
+            flex-shrink: 0;
+            width: 200px;
+            height: 360px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            background: #000;
+        }
+
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            overflow: hidden;
+            cursor: pointer;
+            background: #000;
+        }
+        .video-wrapper .video-thumb {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .video-wrapper .play-btn-overlay {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.3);
+            transition: background 0.3s;
+        }
+        .video-wrapper:hover .play-btn-overlay {
+            background: rgba(0,0,0,0.5);
+        }
+        .video-wrapper .video-iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 15px;
+            display: none;
+        }
+        .video-wrapper.playing .video-thumb,
+        .video-wrapper.playing .play-btn-overlay {
+            display: none;
+        }
+        .video-wrapper.playing .video-iframe {
+            display: block !important;
+        }
+
+        @keyframes scrollLeft {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+@media(max-width:768px){
+            section{padding:40px 0;}
+            .hero-section{padding:50px 0 30px;}
+            .counter{font-size:1.6rem;}
+            .wa-btn{width:100%;justify-content:center;}
+            h1.display-3{font-size:2rem;}
+            h2.display-5{font-size:1.5rem;}
+            .feedback-item { width: 180px; height: 320px; }
+            .video-feedback-item { width: 180px; height: 320px; }
+        }
+        .feedback-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+@media(max-width:768px){
+            section{padding:40px 0;}
+            .hero-section{padding:50px 0 30px;}
+            .counter{font-size:1.6rem;}
+            .wa-btn{width:100%;justify-content:center;}
+            h1.display-3{font-size:2rem;}
+            h2.display-5{font-size:1.5rem;}
+            }
+        @media(prefers-reduced-motion:reduce){
+            *{animation-duration:.01ms !important;transition-duration:.01ms !important;}
+            .shine-effect::before{animation:none !important;}
+        }
+    </style>
+<base target="_blank">
+<base target="_blank">
+<base target="_blank">
+</head>
+<body class="text-dark">
+
+<!-- FORM BACKDROP -->
+<div class="form-backdrop" id="formBackdrop"></div>
+
+<!-- PRIVACY MODAL -->
+<div class="privacy-modal" id="privacyModal">
+    <div id="privacyContent">
+        <div class="pp-scroll">
+            <button class="btn-close position-absolute top-0 end-0 m-3" id="closePrivacyBtn" aria-label="Close"></button>
+            <h2 class="h4 fw-bold mb-3" style="color:var(--primary);">Privacy Policy</h2>
+            <div style="font-size:0.9rem;line-height:1.6;">
+                <p><strong>Information We Collect:</strong> Name, phone, age, gender and profession you provide via our form.</p>
+                <p class="mt-2"><strong>How We Use It:</strong> Only to share program info, provide mentorship support and updates. Never sold to third parties.</p>
+                <p class="mt-2"><strong>Data Security:</strong> We implement industry-standard measures. Data is accessed only by authorized personnel.</p>
+                <p class="mt-2"><strong>Your Rights:</strong> Access, correct, or delete your data anytime by contacting us on WhatsApp.</p>
+                <p class="mt-2"><strong>Disclaimer:</strong> Results depend on personal effort and consistency. Earnings vary per individual.</p>
+                <p class="text-center mt-3 mb-0">© 2025 Mohini Trivedi Digital Mentorship. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== HERO ===== -->
+<section class="hero-section text-center">
+    <div class="container">
+        <div class="badge-custom glow-pulse">🚀 Join The Revolution</div>
+        <h1 class="display-3 fw-bold gradient-text mb-2">
+            Join <span class="counter" data-target="1000" data-suffix="+">0</span> Achievers
+        </h1>
+        <p class="hero-text-compact">Students, Housewives & Job Professionals building income online with Mohini Trivedi</p>
+        <button class="wa-btn open-any glow-pulse" data-source="Hero">📲 Start Your Journey Today</button>
+    </div>
+</section>
+
+<!-- ===== ABOUT / IMAGE ===== -->
+<section class="py-5" style="background: var(--lightest);">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <button class="wa-btn open-any glow-pulse mb-3 d-inline-block" data-source="About Image Button">👇 See My Journey 👇</button>
+                <div class="hero-image-wrap shine-effect">
+                    <img src="https://i.ibb.co/pj2TWtD5/Whats-App-Image-2026-10-02-at-2-02-20-PM.jpg"
+                         alt="Mohini Trivedi – Build Your Online Income" loading="lazy"
+                         onerror="this.src='https://via.placeholder.com/600x800/9333ea/FFFFFF?text=Mohini+Trivedi'">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="badge-custom mb-2">💫 Your Mentor</div>
+                <h2 class="display-5 fw-bold mb-3">Hi, I'm Mohini Trivedi</h2>
+                <div class="mb-3">
+                    <p class="fs-5 d-flex align-items-center gap-2 mb-2">✅ Digital Entrepreneur</p>
+                    <p class="fs-5 d-flex align-items-center gap-2 mb-2">💻 Online Income Expert</p>
+                    <p class="fs-5 d-flex align-items-center gap-2">🎯 Income Coach</p>
+                </div>
+                <div class="p-3 rounded-2 mb-3 glow-border" style="background: var(--white);">
+                    <h3 class="h5 fw-bold mb-2" style="color:var(--primary);">🎯 My Mission:</h3>
+                    <p class="fs-5 fw-semibold mb-0">"Build a Genuine Online Income From Home - No Experience Needed"</p>
+                </div>
+                <button class="wa-btn open-any mb-4 shine-effect" data-source="About Section">📲 Connect on WhatsApp</button>
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="stat-card shine-effect">
+                            <div class="counter" data-target="5" data-suffix="+">0</div>
+                            <p>Years of Experience</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card shine-effect">
+                            <div class="counter" data-target="1000" data-suffix="+">0</div>
+                            <p>Lives Transformed</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="stat-card shine-effect">
+                            <div class="counter" data-target="100" data-suffix="%">0</div>
+                            <p>Practical Approach</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STEPS ===== -->
+<section class="py-5" style="background: var(--white);">
+    <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-4" style="color:var(--primary);">What Happens When You Join?</h2>
+        <div class="row g-3">
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card shine-effect">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-2" style="color:var(--primary);">Instant Connection</h3>
+                            <p>Direct WhatsApp access to Mohini</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card shine-effect">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-2" style="color:var(--primary);">Complete Access</h3>
+                            <p>Proven step-by-step training system</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card shine-effect">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-2" style="color:var(--primary);">Daily Mentorship</h3>
+                            <p>24/7 support & community access</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="step-card shine-effect">
+                    <div class="d-flex align-items-start gap-3">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3 class="h5 fw-bold mb-2" style="color:var(--primary);">Start Earning</h3>
+                            <p>Begin from Week 1 confidently</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <button class="wa-btn open-any shine-effect" data-source="Steps">📲 Get Started Now</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== KNOW YOUR COACH ===== -->
+<section class="py-5" style="background: linear-gradient(135deg,var(--lightest),var(--white));">
+    <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-4" style="color:var(--primary);">Know Your Coach</h2>
+        <div class="row g-3 align-items-center">
+            <div class="col-md-6">
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 mb-3 shadow-sm">
+                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle fs-4"
+                         style="width:70px;height:70px;min-width:70px;background:linear-gradient(135deg,var(--primary),var(--light));">⭐</div>
+                    <div>
+                        <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="5" data-suffix="+">0</span></h3>
+                        <p class="mb-0">Years of Experience</p>
+                    </div>
+                </div>
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 mb-3 shadow-sm">
+                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle fs-4"
+                         style="width:70px;height:70px;min-width:70px;background:linear-gradient(135deg,var(--light),var(--darkest));">👥</div>
+                    <div>
+                        <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="1000" data-suffix="+">0</span></h3>
+                        <p class="mb-0">Students Reached</p>
+                    </div>
+                </div>
+                <div class="stats-white d-flex align-items-center gap-3 p-3 rounded-2 shadow-sm">
+                    <div class="text-white d-flex align-items-center justify-content-center rounded-circle fs-4"
+                         style="width:70px;height:70px;min-width:70px;background:linear-gradient(135deg,var(--primary),var(--darkest));">🏆</div>
+                    <div>
+                        <h3 class="fw-bold mb-1 fs-2"><span class="counter" data-target="24" data-suffix="/7">0</span></h3>
+                        <p class="mb-0">Support Available</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="stats-white p-4 rounded-3 shadow-lg glow-pulse">
+                    <h3 class="fw-bold fs-3 mb-2" style="color:var(--primary);">🔥 Now it's YOUR time</h3>
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <h4 class="fw-bold fs-2 mb-0" style="color:var(--primary);">
+                                ₹<span class="counter" data-target="500000" data-suffix="+">0</span>
+                            </h4>
+                            <p class="text-muted">Earned by Students</p>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="fw-bold fs-2 mb-0" style="color:var(--primary);">
+                                <span class="counter" data-target="100" data-suffix="+">0</span>
+                            </h4>
+                            <p class="text-muted">Active Earners</p>
+                        </div>
+                    </div>
+                    <hr style="border-color:var(--lightest);">
+                    <p class="fw-semibold mb-0">📱 All skills taught on your <strong>smartphone</strong> — no laptop needed!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== STUDENT FEEDBACK ===== -->
+<section class="py-5" style="background: var(--white);">
+    <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-3" style="color:var(--primary);">💬 Student Feedback & Results</h2>
+        <p class="text-center text-muted mb-4">Real stories from real students who transformed their lives</p>
+
+        <div class="feedback-viewport" style="overflow:hidden;margin:1.5rem 0;">
+                        <div class="feedback-track">
+                <div class="video-feedback-item">
+                    <div class="video-wrapper" data-video-id="4AeCVCMjSEg" onclick="toggleVideo(this)">
+                        <img src="https://img.youtube.com/vi/4AeCVCMjSEg/mqdefault.jpg" class="video-thumb" alt="Video thumbnail" loading="lazy">
+                        <div class="play-btn-overlay">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="rgba(0,0,0,0.7)"/><polygon points="24,18 24,42 42,30" fill="white"/></svg>
+                        </div>
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/4AeCVCMjSEg?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" title="Student Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display:none;"></iframe>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <img src="https://i.ibb.co/gbszwtMt/image.png" alt="Student Feedback" loading="lazy">
+                </div>
+                <div class="video-feedback-item">
+                    <div class="video-wrapper" data-video-id="3CO5yx3ZubU" onclick="toggleVideo(this)">
+                        <img src="https://img.youtube.com/vi/3CO5yx3ZubU/mqdefault.jpg" class="video-thumb" alt="Video thumbnail" loading="lazy">
+                        <div class="play-btn-overlay">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="rgba(0,0,0,0.7)"/><polygon points="24,18 24,42 42,30" fill="white"/></svg>
+                        </div>
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/3CO5yx3ZubU?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" title="Student Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display:none;"></iframe>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <img src="https://i.ibb.co/G3Tj9KGr/image.png" alt="Student Feedback" loading="lazy">
+                </div>
+                <div class="video-feedback-item">
+                    <div class="video-wrapper" data-video-id="BCrV8XuuoNU" onclick="toggleVideo(this)">
+                        <img src="https://img.youtube.com/vi/BCrV8XuuoNU/mqdefault.jpg" class="video-thumb" alt="Video thumbnail" loading="lazy">
+                        <div class="play-btn-overlay">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="rgba(0,0,0,0.7)"/><polygon points="24,18 24,42 42,30" fill="white"/></svg>
+                        </div>
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/BCrV8XuuoNU?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" title="Student Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display:none;"></iframe>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <img src="https://i.ibb.co/kgv453hN/image.png" alt="Student Feedback" loading="lazy">
+                </div>
+            </div>
+            <div class="feedback-track">
+                <div class="video-feedback-item">
+                    <div class="video-wrapper" data-video-id="4AeCVCMjSEg" onclick="toggleVideo(this)">
+                        <img src="https://img.youtube.com/vi/4AeCVCMjSEg/mqdefault.jpg" class="video-thumb" alt="Video thumbnail" loading="lazy">
+                        <div class="play-btn-overlay">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="rgba(0,0,0,0.7)"/><polygon points="24,18 24,42 42,30" fill="white"/></svg>
+                        </div>
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/4AeCVCMjSEg?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" title="Student Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display:none;"></iframe>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <img src="https://i.ibb.co/gbszwtMt/image.png" alt="Student Feedback" loading="lazy">
+                </div>
+                <div class="video-feedback-item">
+                    <div class="video-wrapper" data-video-id="3CO5yx3ZubU" onclick="toggleVideo(this)">
+                        <img src="https://img.youtube.com/vi/3CO5yx3ZubU/mqdefault.jpg" class="video-thumb" alt="Video thumbnail" loading="lazy">
+                        <div class="play-btn-overlay">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="rgba(0,0,0,0.7)"/><polygon points="24,18 24,42 42,30" fill="white"/></svg>
+                        </div>
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/3CO5yx3ZubU?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" title="Student Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display:none;"></iframe>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <img src="https://i.ibb.co/G3Tj9KGr/image.png" alt="Student Feedback" loading="lazy">
+                </div>
+                <div class="video-feedback-item">
+                    <div class="video-wrapper" data-video-id="BCrV8XuuoNU" onclick="toggleVideo(this)">
+                        <img src="https://img.youtube.com/vi/BCrV8XuuoNU/mqdefault.jpg" class="video-thumb" alt="Video thumbnail" loading="lazy">
+                        <div class="play-btn-overlay">
+                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" fill="rgba(0,0,0,0.7)"/><polygon points="24,18 24,42 42,30" fill="white"/></svg>
+                        </div>
+                        <iframe class="video-iframe" src="https://www.youtube.com/embed/BCrV8XuuoNU?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0" title="Student Testimonial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy" style="display:none;"></iframe>
+                    </div>
+                </div>
+                <div class="feedback-item">
+                    <img src="https://i.ibb.co/kgv453hN/image.png" alt="Student Feedback" loading="lazy">
+                </div>
+            </div></div>
+            <button class="wa-btn open-any shine-effect" data-source="Feedback Section">📲 Join & Get Results Like These</button>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="py-5" style="background: var(--lightest);">
+    <div class="container">
+        <h2 class="text-center display-5 fw-bold mb-4" style="color:var(--primary);">Frequently Asked Questions</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="accordion" id="faqAccordion">
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">What kind of work will I be doing?</button>
+                        </h2>
+                        <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Digital skills: Social Media Management, Content Creation, Affiliate Marketing, and more. 100% legitimate and skill-based.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">Is this program legitimate & safe?</button>
+                        </h2>
+                        <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Absolutely. We focus on real skills that are in high demand. 1000+ students are already earning through our system.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">How much time daily?</button>
+                        </h2>
+                        <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Just 1-2 hours daily. Flexible for students, job holders, and housewives.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">When will I start earning?</button>
+                        </h2>
+                        <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Most students start seeing results within the first month, depending on consistency.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq5">Any prior experience needed?</button>
+                        </h2>
+                        <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">No experience needed! We start from zero and guide you step-by-step.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq6">What support is provided after joining?</button>
+                        </h2>
+                        <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Daily mentorship, 24/7 WhatsApp support, weekly strategy sessions & lifetime community access.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq7">Any investment required?</button>
+                        </h2>
+                        <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">A nominal fee covers everything. No hidden costs, no surprise charges. Connect on WhatsApp for complete details.</div>
+                        </div>
+                    </div>
+                    <div class="accordion-item glow-border">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq8">Can I do this alongside my job or studies?</button>
+                        </h2>
+                        <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">Yes! Designed for busy people. Learn and earn in your spare time, at your own pace.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FINAL CTA ===== -->
+<section class="py-5 text-white" style="background: linear-gradient(135deg,var(--primary),var(--light));">
+    <div class="container text-center">
+        <h2 class="display-4 fw-bold mb-3">Ready to Transform Your Life?</h2>
+        <p class="fs-5 mb-4">Join thousands on their journey to financial independence</p>
+        <div class="card border-0 p-4 p-md-5 mb-4" style="background:var(--white);color:var(--darkest);">
+            <h3 class="h4 fw-bold mb-3" style="color:var(--primary);">📲 How to Start?</h3>
+            <p class="fs-5 mb-3">Simply message me on WhatsApp:</p>
+            <div class="row g-2 mb-3">
+                <div class="col-md-4">
+                    <div class="glow-border text-dark p-3 rounded" style="background:var(--lightest);">
+                        <strong>📝 Name:</strong> Full Name
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glow-border text-dark p-3 rounded" style="background:var(--lightest);">
+                        <strong>🎂 Age:</strong> Your Age
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="glow-border text-dark p-3 rounded" style="background:var(--lightest);">
+                        <strong>💼 Profession:</strong> Current Status
+                    </div>
+                </div>
+            </div>
+            <p class="fs-6 fw-semibold mb-3" style="color:var(--primary);">📌 Save My Number: +91 85428 11307</p>
+            <button class="wa-btn open-any glow-pulse mx-auto" data-source="Final CTA"
+                style="background:var(--white)!important;color:var(--primary)!important;border:2px solid var(--primary);">
+                📲 Connect on WhatsApp Now
+            </button>
+            <div class="text-center mt-4">
+                <a href="https://www.instagram.com/mohinitrivedi" target="_blank"
+                   class="btn btn-outline-dark btn-lg d-inline-flex align-items-center gap-2">
+                    <i data-lucide="instagram" width="24"></i>Follow on Instagram
+                </a>
+            </div>
+        </div>
+        <div class="card border-0 p-3 mb-3 glow-border" style="background:rgba(255,255,255,.15);">
+            <h4 class="h5 fw-bold mb-2">⏳ Within 24 hours:</h4>
+            <div class="row text-white">
+                <div class="col-md-6"><div class="d-flex align-items-center gap-2 justify-content-center">📋 Complete Program Details</div></div>
+                <div class="col-md-6"><div class="d-flex align-items-center gap-2 justify-content-center">🗺 Your Personal Roadmap</div></div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-outline-light btn-sm" id="privacyBtn">
+                <i data-lucide="shield-check" width="16"></i> Privacy Policy
+            </button>
+        </div>
+        <p class="fs-6 mb-2 mt-3">🌟 Empower with skills • 🌈 Support every vision • 🚀 Dreams to direction</p>
+        <p class="fs-4 fw-bold mb-1">❤️ With Strength & Sincerity, Mohini Trivedi</p>
+    </div>
+</section>
+
+<!-- ===== FORM POPUP ===== -->
+<div id="formContainer">
+    <div class="card form-card glow-pulse">
+        <div class="card-body p-4 position-relative">
+            <button id="closeFormBtn" class="btn-close position-absolute top-0 end-0 m-3" aria-label="Close"></button>
+            <div class="text-center mb-4">
+                <h2 class="h4 fw-bold mb-1" style="color:var(--primary);">🚀 Start Your Journey</h2>
+                <p class="text-muted small">Fill details to get started</p>
+            </div>
+            <form id="mainForm" novalidate>
+                <input type="hidden" id="sourceInfo" name="sourceInfo">
+                <div class="row g-2">
+
+                    <div class="col-12">
+                        <label class="form-label d-flex align-items-center gap-2">
+                            <i data-lucide="user" style="width:16px;"></i> Full Name *
+                        </label>
+                        <input id="inp_name" name="name" type="text" class="form-control" required placeholder="Enter your full name">
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label d-flex align-items-center gap-2">
+                            <i data-lucide="phone" style="width:16px;"></i> WhatsApp Number *
+                        </label>
+                        <input id="inp_phone" name="phone" type="tel" class="form-control" required maxlength="10" placeholder="10-digit number">
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-label d-flex align-items-center gap-2">
+                            <i data-lucide="calendar" style="width:16px;"></i> Age *
+                        </label>
+                        <input id="inp_age" name="age" type="number" class="form-control" required min="15" max="65" placeholder="Your age">
+                    </div>
+
+                    <div class="col-6">
+                        <label class="form-label d-flex align-items-center gap-2">
+                            <i data-lucide="users" style="width:16px;"></i> Gender *
+                        </label>
+                        <select id="inp_gender" name="gender" class="form-select" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label d-flex align-items-center gap-2">
+                            <i data-lucide="briefcase" style="width:16px;"></i> Profession *
+                        </label>
+                        <select id="inp_profession" name="profession" class="form-select" required>
+                            <option value="">Select your status</option>
+                            <option>Student</option>
+                            <option>Housewife</option>
+                            <option>Working Professional</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <button type="submit" class="wa-btn w-100">📲 Send & Connect on WhatsApp</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    lucide.createIcons();
+
+    // ============================================================
+    // SCRIPT URL - APKI NAYI GOOGLE APPS SCRIPT URL
+    // ============================================================
+    const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx69I-MkKAImJLnwOpwlcOB1PYlrV4yCV4SmUXCREYcB8N5jG7VuTbGlT8edt1J6EejsQ/exec";
+    const WA_NUMBER  = "918542811307";
+
+    function trackContactEvent() {
+      if (typeof fbq !== 'undefined' && !sessionStorage.getItem('mohini_contact_tracked')) {
+        fbq('track', 'Contact');
+        sessionStorage.setItem('mohini_contact_tracked', 'true');
+      }
+    }
+
+    /* Counter animation */
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !entry.target.classList.contains('counted')) {
+                entry.target.classList.add('counted');
+                const target    = +entry.target.getAttribute('data-target');
+                const prefix    = entry.target.getAttribute('data-prefix') || '';
+                const suffix    = entry.target.getAttribute('data-suffix') || '';
+                let current     = 0;
+                const increment = Math.max(1, Math.floor(target / 50));
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) { current = target; clearInterval(timer); }
+                    entry.target.textContent = prefix + current.toLocaleString() + suffix;
+                }, 30);
+            }
+        });
+    }, { threshold: 0.3 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    /* Popup elements */
+    const formBackdrop  = document.getElementById('formBackdrop');
+    const formContainer = document.getElementById('formContainer');
+    const mainForm      = document.getElementById('mainForm');
+    const sourceInfo    = document.getElementById('sourceInfo');
+    const closeFormBtn  = document.getElementById('closeFormBtn');
+    const privacyModal  = document.getElementById('privacyModal');
+    const privacyBtn    = document.getElementById('privacyBtn');
+    const closePrivBtn  = document.getElementById('closePrivacyBtn');
+
+    function openForm(source) {
+        sourceInfo.value = source || 'Website';
+        formBackdrop.classList.add('show');
+        formContainer.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    function closeForm() {
+        formBackdrop.classList.remove('show');
+        formContainer.classList.remove('show');
+        document.body.style.overflow = '';
+        setTimeout(() => mainForm.reset(), 300);
+    }
+    function openPrivacy() {
+        privacyModal.classList.add('show');
+        document.body.style.overflow = 'hidden';
+    }
+    function closePrivacy() {
+        privacyModal.classList.remove('show');
+        document.body.style.overflow = '';
+    }
+
+    formBackdrop.addEventListener('click', closeForm);
+    closeFormBtn.addEventListener('click', closeForm);
+    privacyBtn.addEventListener('click', openPrivacy);
+    closePrivBtn.addEventListener('click', closePrivacy);
+    privacyModal.addEventListener('click', e => { if (e.target === privacyModal) closePrivacy(); });
+
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('.open-any');
+        if (trigger && !trigger.closest('#formContainer')) {
+            e.preventDefault();
+            openForm(trigger.dataset.source || 'Website');
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') { closeForm(); closePrivacy(); }
+    });
+
+    // ============================================================
+    // FORM SUBMIT - WHATSAPP + GOOGLE SHEET
+    // ============================================================
+    mainForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const name       = document.getElementById('inp_name').value.trim();
+        const phone      = document.getElementById('inp_phone').value.replace(/\D/g, '');
+        const age        = document.getElementById('inp_age').value;
+        const gender     = document.getElementById('inp_gender').value;
+        const profession = document.getElementById('inp_profession').value;
+        const source     = sourceInfo.value || 'Website';
+
+        if (!name || phone.length < 10 || !age || !gender || !profession) {
+            alert('Please fill all fields correctly with a valid 10-digit phone number.');
+            return;
+        }
+
+        // 1. WHATSAPP - Full details ke saath message
+        const waMsg = encodeURIComponent(
+            `Hello Mohini! 👋\n\nI'm interested in your digital mentorship program. Here are my details:\n\nName: ${name}\nPhone: ${phone}\nAge: ${age}\nGender: ${gender}\nProfession: ${profession}\n\nPlease share next steps. Thank you! ✨`
+        );
+        const waUrl = `https://wa.me/${WA_NUMBER}?text=${waMsg}`;
+        window.open(waUrl, '_blank');
+
+        // 2. GOOGLE SHEET - Saari details query params mein bhejo
+        const params = new URLSearchParams({
+            name: name,
+            phone: phone,
+            age: age,
+            gender: gender,
+            profession: profession,
+            source: source
+        });
+
+        fetch(SCRIPT_URL + '?' + params.toString(), {
+            method: 'POST',
+            mode: 'no-cors'
+        }).catch(() => {});
+
+        trackContactEvent();
+        closeForm();
+    });
+
+    // Video play/pause toggle for mobile and desktop
+    function toggleVideo(wrapper) {
+        const iframe = wrapper.querySelector('.video-iframe');
+        const isPlaying = wrapper.classList.contains('playing');
+
+        // Pause all other videos first
+        document.querySelectorAll('.video-wrapper.playing').forEach(el => {
+            if (el !== wrapper) {
+                el.classList.remove('playing');
+                const otherIframe = el.querySelector('.video-iframe');
+                const vidId = el.dataset.videoId;
+                otherIframe.src = `https://www.youtube.com/embed/${vidId}?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0`;
+            }
+        });
+
+        if (!isPlaying) {
+            wrapper.classList.add('playing');
+            const vidId = wrapper.dataset.videoId;
+            iframe.src = `https://www.youtube.com/embed/${vidId}?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0`;
+        } else {
+            wrapper.classList.remove('playing');
+            const vidId = wrapper.dataset.videoId;
+            iframe.src = `https://www.youtube.com/embed/${vidId}?autoplay=0&mute=0&controls=1&modestbranding=1&rel=0`;
+        }
+    }
+
+</script>
+</body>
+</html>
